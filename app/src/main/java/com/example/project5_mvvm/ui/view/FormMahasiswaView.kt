@@ -41,6 +41,15 @@ fun FormMahasiswaView(
         .padding(16.dp)
         ,horizontalAlignment = Alignment.CenterHorizontally //Mengatur agar setiap elemen di dalam Column disusun rata tengah secara horizontal
     ) {
+        OutlinedTextField(
+            value = nama, //nilai text yang akan ditampilkan dan di simpan ke variable nama
+            onValueChange = {nama = it}, //lamda function setiap kali ada perubahan maka langsung di perbarui dengan text yang baru (it merujuk ke text yg dimasukkan)
+            placeholder = { Text("Masukkan Nama")}, //sebagai petunjuk ketika kolom masih kosong
+            label = { Text("Nama")}, //judul
+            modifier = Modifier
+                .fillMaxWidth() //memenuhi lebar layar yang tersedia
+                .padding(1.dp)
+        )
 
 
     }
