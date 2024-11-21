@@ -23,3 +23,9 @@ enum class Halaman{
     Detail
 }
 
+@Composable
+fun PengelolaHalaman(
+
+){
+
+}
