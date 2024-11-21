@@ -35,6 +35,15 @@ fun FormMahasiswaView(
     var alamat by remember { mutableStateOf(" ") }
     var nim by remember { mutableStateOf(" ") }
 
+    val dataMahasiswa: MutableList<String> = mutableListOf(nama, selectedGender, email, alamat, nim )
+
+    Column (Modifier.fillMaxSize() //Mengisi seluruh ukuran layar
+        .padding(16.dp)
+        ,horizontalAlignment = Alignment.CenterHorizontally //Mengatur agar setiap elemen di dalam Column disusun rata tengah secara horizontal
+    ) {
+
+
+    }
 
 }
 
