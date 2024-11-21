@@ -30,5 +30,7 @@ fun PengelolaHalaman(
 ){
     val uiState by viewModel.uiState.collectAsState()
 
+    NavHost(navController = navController, startDestination = Halaman.Formulir.name) {
 
+    }
 }
