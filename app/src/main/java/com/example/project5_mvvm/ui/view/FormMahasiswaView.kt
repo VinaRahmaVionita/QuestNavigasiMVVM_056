@@ -96,7 +96,10 @@ fun FormMahasiswaView(
                 .padding(1.dp)
         )
 
-
+        Button(onClick = { onSubmitClicked(dataMahasiswa) })
+        {
+            Text("Simpan")
+        }
     }
 
 }
