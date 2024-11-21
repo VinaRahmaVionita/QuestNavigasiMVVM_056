@@ -44,7 +44,11 @@ fun DetailMahasiswaView(
             )
         }
 
-        
+        ElevatedButton(
+            onClick = { onBackButton() }
+        ) {
+            Text("Kembali")
+        }
 
     }
 }
