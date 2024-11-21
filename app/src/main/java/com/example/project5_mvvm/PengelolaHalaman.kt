@@ -25,7 +25,8 @@ enum class Halaman{
 
 @Composable
 fun PengelolaHalaman(
-
+    navController: NavHostController = rememberNavController(),
+    viewModel: MahasiswaViewModel = viewModel()
 ){
 
 }
