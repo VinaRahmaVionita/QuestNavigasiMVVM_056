@@ -31,7 +31,20 @@ fun DetailMahasiswaView(
         Pair("NIM", uiStateMahasiswa.nim),
     )
 
+    Column (
+        modifier = modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ){
 
+        listDataMhs.forEach { items ->
+            CardSection(
+                judulParam = items.first,
+                isiParam = items.second
+            )
+        }
+
+        
 
     }
 }
