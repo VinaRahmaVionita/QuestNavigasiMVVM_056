@@ -51,6 +51,20 @@ fun FormMahasiswaView(
                 .padding(1.dp)
         )
 
+        Row() {
+            listJK.forEach { item -> //loop
+                Row (verticalAlignment = Alignment.CenterVertically) //agar sejajar dengan radio button
+                { RadioButton(selected = selectedGender == item,
+                    onClick = {
+                        selectedGender = item //variable item untuk menyimpan nilai gender
+                    })
+                    Text(item)
+                }
+            }
+
+        }
+
+
 
     }
 
