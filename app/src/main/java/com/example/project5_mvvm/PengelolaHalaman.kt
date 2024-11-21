@@ -28,5 +28,7 @@ fun PengelolaHalaman(
     navController: NavHostController = rememberNavController(),
     viewModel: MahasiswaViewModel = viewModel()
 ){
+    val uiState by viewModel.uiState.collectAsState()
+
 
 }
