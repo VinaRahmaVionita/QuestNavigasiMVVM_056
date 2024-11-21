@@ -64,6 +64,37 @@ fun FormMahasiswaView(
 
         }
 
+        OutlinedTextField(
+            value = email,
+            onValueChange = {email = it},
+            placeholder = { Text("Masukkan Email")},
+            label = { Text("Email")},
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(1.dp)
+        )
+
+        OutlinedTextField(
+            value = alamat,
+            onValueChange = {alamat = it},
+            placeholder = { Text("Masukkan Alamat")},
+            label = { Text("Alamat")},
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(1.dp)
+        )
+
+        OutlinedTextField(
+            value = nim,
+            onValueChange = {nim = it},
+            placeholder = { Text("Masukkan NIM")},
+            label = { Text("NIM")},
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(1.dp)
+        )
 
 
     }
