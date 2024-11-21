@@ -28,7 +28,13 @@ fun FormMahasiswaView(
     listJK: List<String>,
     onSubmitClicked: (MutableList<String>) -> Unit
 
-){
+){  //Deklarasi Variabel untuk Input Pengguna
+    var nama by rememberSaveable { mutableStateOf(" ") }
+    var selectedGender by remember { mutableStateOf(" ") }
+    var email by remember { mutableStateOf(" ") }
+    var alamat by remember { mutableStateOf(" ") }
+    var nim by remember { mutableStateOf(" ") }
+
 
 }
 
